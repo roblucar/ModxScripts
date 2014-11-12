@@ -10,7 +10,7 @@ $modx->initialize('mgr');
 $modx->setLogLevel(modX::LOG_LEVEL_INFO);
 
 //$modx->exec("UPDATE {$modx->getTableName('modResource')} SET uri = '' WHERE uri_override = 0");
-
+//
 $modx->call('modResource', 'refreshURIs', array(&$modx,401));
 $modx->call('modResource', 'refreshURIs', array(&$modx,402));
 $modx->call('modResource', 'refreshURIs', array(&$modx,403));
